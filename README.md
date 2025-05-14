@@ -42,6 +42,8 @@ If you are an instructor or NSU representative and want content removed or updat
 
 For feedback or requests, feel free to open an issue or contact:
 
-**Maintainer:** [Ratul](https://github.com/Ratul2016t)[Email](willfromnorth@proton.me)
+**Maintainer:** 
+[Ratul](https://github.com/Ratul2016t)
+[Email me](willfromnorth@proton.me)
 
 ---
