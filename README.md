@@ -16,7 +16,7 @@ Welcome to the repository for **ECO372: Econometrics**. This repository contains
 ## 🌐 Live Website
 
 Access the slides and materials directly via GitHub Pages:  
-🔗 [live_page](https://ratul2016t.github.io/nsueco372)
+🔗 [live_page](https://ratul2016t.github.io/eco372)
 
 > Hosted using **GitHub Pages** for easy and open access.
 
