@@ -1,96 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ECO 372 Slides</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: "Times New Roman", serif;
-            margin: 20px;
-            background-color: #f4f4f4;
-            color: #333;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh; /* Ensure footer stays at the bottom */
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* Tailwind gray-900 */
+            color: #d1d5db; /* Tailwind gray-300 */
         }
-
-        h1 {
-            color: #007bff;
-            text-align: center;
-            margin-bottom: 30px;
-            font-family: "Times New Roman", serif;
+        .gradient-text {
+            background: linear-gradient(to right, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
-
-        ul {
-            list-style: none;
-            padding: 0;
-            max-width: 600px;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px; /* Add some space above the footer */
+        .content-card {
+            border: 1px solid #374151; /* gray-700 */
+            background-color: #1f2937; /* gray-800 */
+            border-radius: 0.5rem;
+            padding: 2rem;
         }
-
-        li {
-            margin-bottom: 10px;
-            border-bottom: 1px #ddd solid;
-            padding-bottom: 10px;
+        .slide-link {
+             display: block;
+             padding: 0.75rem 1rem;
+             border-bottom: 1px solid #374151; /* gray-700 */
+             transition: background-color 0.2s ease-in-out;
+             color: #d1d5db;
         }
-
-        li:last-child {
-            border-bottom: none;
-            padding-bottom: 0;
-        }
-
-        a {
-            color: #007bff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        a:hover {
-            color: #0056b3;
-            text-decoration: underline;
-        }
-
-        footer {
-            background-color: #333;
+        .slide-link:hover {
+            background-color: #374151; /* gray-700 */
             color: #fff;
-            text-align: center;
-            padding: 10px;
-            margin-top: auto; /* Push footer to the bottom */
-            border-radius: 0 0 8px 8px; /* Match the list's bottom corners */
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
+        }
+        .slide-link:last-child {
+            border-bottom: none;
         }
     </style>
 </head>
-<body>
-    <h1>ECO 372: Econometrics Slides of North South University</h1>
-    <p>Welcome to the ECO 372 course! Below are the lecture slides for the Spring 2025 semester. Click on the links to download the slides.</p>
-    <ul>
-        <li><a href="ECO 372.1 Course Outline-Spring 2025.pdf">ECO 372.1 Course Outline-Spring 2025</a></li>
-        <li><a href="ECO 372.1 Spring 2025-Lecture 1.pdf">ECO 372.1 Spring 2025-Lecture 1</a></li>
-        <li><a href="ECO 372 Spring 2025 Lecture-2.pdf">ECO 372 Spring 2025 Lecture-2</a></li>
-        <li><a href="ECO 372 Spring 2025 Lecture-3.pdf">ECO 372 Spring 2025 Lecture-3</a></li>
-        <li><a href="ECO 372 Spring 2025-Lecture-4.pdf">ECO 372 Spring 2025-Lecture-4</a></li>
-        <li><a href="ECO 372 Spring 2025-Lecture-5.pdf">ECO 372 Spring 2025-Lecture-5</a></li>
-        <li><a href="ECO 372 Spring 2025 Lecture-6.pdf">ECO 372 Spring 2025 Lecture-6</a></li>
-        <li><a href="ECO 372 Spring 2025 Lecture-7.pdf">ECO 372 Spring 2025 Lecture-7</a></li>
-        <li><a href="ECO 372 Spring 2025 Lecture-8.pdf">ECO 372 Spring 2025 Lecture-8</a></li>
-        <li><a href="ECO 372 Spring 2025 Lecture-9.pdf">ECO 372 Spring 2025 Lecture-9</a></li>
-        <li><a href="ECO 372 Spring 2025 Lecture-10.pdf">ECO 372 Spring 2025 Lecture-10</a></li>
-        <li><a href="ECO 372 Spring 2025 Lecture-12.pdf">ECO 372 Spring 2025 Lecture-12</a></li>
-         <li><a href="ECO 372 Spring 2025 Lecture-14 & 15.pdf">ECO 372 Spring 2025 Lecture-14 & 15</a></li>
-        <li><a href="ECO 372 Spring 2025 Lecture-17.pdf">ECO 372 Spring 2025 Lecture-17</a></li>
-        <li><a href="ECO 372 Spring 2025 Lecture-18.pdf">ECO 372 Spring 2025 Lecture-18</a></li>
-    </ul>
-    <footer>
-        Maintainer: Ratul2016t
+<body class="antialiased">
+
+    <main class="container mx-auto px-6 py-12 md:py-20">
+
+        <h1 class="text-3xl md:text-4xl font-bold text-center gradient-text">
+            ECO 372: Econometrics Slides
+        </h1>
+        <p class="text-center mt-4 max-w-2xl mx-auto text-gray-400">
+            Welcome to the ECO 372 course! Below are the lecture slides for the Spring 2025 semester. Click on the links to view the slides.
+        </p>
+
+        <div class="mt-12 max-w-3xl mx-auto content-card">
+            <ul>
+                <li><a href="ECO 372.1 Course Outline-Spring 2025.pdf" target="_blank" class="slide-link">ECO 372.1 Course Outline-Spring 2025</a></li>
+                <li><a href="ECO 372.1 Spring 2025-Lecture 1.pdf" target="_blank" class="slide-link">ECO 372.1 Spring 2025-Lecture 1</a></li>
+                <li><a href="ECO 372 Spring 2025 Lecture-2.pdf" target="_blank" class="slide-link">ECO 372 Spring 2025 Lecture-2</a></li>
+                <li><a href="ECO 372 Spring 2025 Lecture-3.pdf" target="_blank" class="slide-link">ECO 372 Spring 2025 Lecture-3</a></li>
+                <li><a href="ECO 372 Spring 2025-Lecture-4.pdf" target="_blank" class="slide-link">ECO 372 Spring 2025-Lecture-4</a></li>
+                <li><a href="ECO 372 Spring 2025-Lecture-5.pdf" target="_blank" class="slide-link">ECO 372 Spring 2025-Lecture-5</a></li>
+                <li><a href="ECO 372 Spring 2025 Lecture-6.pdf" target="_blank" class="slide-link">ECO 372 Spring 2025 Lecture-6</a></li>
+                <li><a href="ECO 372 Spring 2025 Lecture-7.pdf" target="_blank" class="slide-link">ECO 372 Spring 2025 Lecture-7</a></li>
+                <li><a href="ECO 372 Spring 2025 Lecture-8.pdf" target="_blank" class="slide-link">ECO 372 Spring 2025 Lecture-8</a></li>
+                <li><a href="ECO 372 Spring 2025 Lecture-9.pdf" target="_blank" class="slide-link">ECO 372 Spring 2025 Lecture-9</a></li>
+                <li><a href="ECO 372 Spring 2025 Lecture-10.pdf" target="_blank" class="slide-link">ECO 372 Spring 2025 Lecture-10</a></li>
+                <li><a href="ECO 372 Spring 2025 Lecture-12.pdf" target="_blank" class="slide-link">ECO 372 Spring 2025 Lecture-12</a></li>
+                 <li><a href="ECO 372 Spring 2025 Lecture-14 & 15.pdf" target="_blank" class="slide-link">ECO 372 Spring 2025 Lecture-14 & 15</a></li>
+                <li><a href="ECO 372 Spring 2025 Lecture-17.pdf" target="_blank" class="slide-link">ECO 372 Spring 2025 Lecture-17</a></li>
+                <li><a href="ECO 372 Spring 2025 Lecture-18.pdf" target="_blank" class="slide-link">ECO 372 Spring 2025 Lecture-18</a></li>
+            </ul>
+        </div>
+        
+    </main>
+
+    <footer class="text-center p-4 mt-auto">
+        <p class="text-gray-500">Maintainer: Ratul2016t</p>
     </footer>
+
 </body>
 </html>
